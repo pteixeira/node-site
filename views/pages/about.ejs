@@ -1,0 +1,23 @@
+<%- contentFor('hero') %>
+<section class="hero">
+  <div class="hero-content">
+    <h2>About more useless text</h2>
+    <p>Smaller useless texts</p>
+    <a href="/contact" class="btn btn-lg btn-primary">Drop a useless Contact</a>
+  </div>
+</section>
+
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <h1>Teamerino</h1>
+  <div class="row">
+    <% for (user of users) { %>
+      <div class="col-sm-3">
+        <h2><%= user.name %>
+        <img src="<%= user.avatar %>" alt="avatar" class="img-responsive">
+      </div>
+    <% } %>
+  </div>
+</div>
+
+
